@@ -1,0 +1,539 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 1.15;
+    font-family: 'Inter';
+}
+
+:root {
+    scroll-behavior: smooth;
+    --primary-color: #F25123;
+    --background-color: #242424;
+    --primary-background-color: #000000;
+}
+
+body {
+    background-color: var(--primary-background-color, #000000);
+}
+
+/*start header section*/
+
+header {
+    padding: 50px;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color, #F25123);
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header .logo h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+header ul li a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+header .socials {
+    color: var(--primary-color, #F25123);
+}
+
+header .socials i {
+    font-size: 24px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+/*end header section*/
+
+/*start landing section*/
+
+.landing-section {
+    position: relative;
+    padding: 50px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(assets/boy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.landing-section .landing-text {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-section .landing-text h2 {
+    color: white;
+    font-size: 6rem;
+}
+
+.landing-section .landing-text h3 {
+    color: var(--primary-color, #F25123);
+    font-size: 6rem;
+    width: 100%;
+}
+
+.landing-section .landing-text p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.527);
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+.landing-section .landing-text button {
+    background-color: var(--primary-color, #F25123);
+    width: 180px;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.landing-section .landing-text .socials {
+    margin-left: 20px;
+    margin-top: 30px;
+    color: var(--primary-color, #F25123);
+}
+
+.landing-section .landing-text .socials i {
+    font-size: 24px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.landing-section .circle {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    border: 80px solid var(--primary-color, #F25123);
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    z-index: -1;
+    box-shadow: inset 3px 3px 200px #d5d5d53d, 0px 0px 500px #d5d5d541;
+}
+
+.landing-section .flowers {
+    width: 350px;
+    color: var(--primary-color, #F25123);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.landing-section .flowers i:nth-child(1) {
+    font-size: 150px;
+}
+
+.landing-section .flowers i:nth-child(2) {
+    font-size: 100px;
+    align-self: flex-end;
+    transform: translate(-100px, -50px);
+}
+
+.landing-section .flowers i:nth-child(3) {
+    font-size: 60px;
+    align-self: center;
+    transform: translate(-50px, -50px);
+}
+
+.progress-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 50px;
+    margin-bottom: 150px;
+}
+
+.progress-container>div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.progress-container div::after {
+    content: '';
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(to left, var(--primary-color) 0, var(--primary-color) var(--size), transparent var(--size));
+    background-color: #242424;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.progress-container div h2 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.progress-container div p {
+    color: var(--primary-color, #F25123);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*end landing section*/
+
+/*start info section*/
+
+.info-section {
+    height: 80vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-section .info-text {
+    align-self: flex-start;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-section .info-text .hello {
+    color: var(--primary-color, #F25123);
+}
+
+.info-section .info-text h2 {
+    color: white;
+    font-size: 4rem;
+}
+
+.info-section .info-text h3 {
+    color: var(--primary-color, #F25123);
+    font-size: 4rem;
+}
+
+.info-section .info-text .lorem {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section .info-text .see-more {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-section .info-text .see-more i {
+    color: var(--primary-color, #F25123);
+    cursor: pointer;
+}
+
+.info-section .info-text .see-more p {
+    margin-right: 10px;
+    color: white;
+}
+
+.info-section .info-text button {
+    font-size: 1rem;
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--primary-color, #F25123);
+    border: none;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info-section .info-imgs {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info-section .info-imgs img {
+    object-fit: cover;
+    height: 30%;
+    border-radius: 20px;
+}
+
+.info-section .info-imgs .image1 {
+    width: 100%;
+}
+
+.info-section .info-imgs .image2,
+.info-section .info-imgs .image5 {
+    width: 63.5%;
+}
+
+.info-section .info-imgs .image3,
+.info-section .info-imgs .image4 {
+    width: 33.5%;
+}
+
+
+
+/*end info section*/
+
+/*start cards section*/
+
+.cards-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.cards-section>h2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    width: 400px;
+    color: white;
+}
+
+.cards-section>h2 span {
+    color: var(--primary-color, #F25123);
+}
+
+.cards-section .cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards-section .cards div {
+    border: 1px solid #242424;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 20px;
+    width: 20%;
+    height: 300px;
+    background: linear-gradient(to top, var(--primary-background-color), #242424);
+}
+
+.cards-section .cards div i {
+    color: var(--primary-color, #F25123);
+    font-size: 2rem;
+}
+
+.cards-section .cards h2 {
+    margin-top: 10px;
+    width: 210px;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cards-section .cards p {
+    color: #aaaaaa;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.cards-section .cards button {
+    color: var(--primary-color, #F25123);
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+/*end cards section*/
+
+/*start footer section*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    column-gap: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000001f;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+footer .img1 {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    z-index: -1;
+}
+
+
+footer .col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col1 .logo {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer .col1 .logo img {
+    width: 80px;
+}
+
+footer .col1 .logo .text h2 {
+    color: white;
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+}
+
+footer .col1 .logo .text p {
+    color: #aaaaaa;
+}
+
+footer .col1>h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    color: #aaaaaa;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+footer .col1 button {
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    width: 100px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer .col1 .icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .col1 .icons i {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #aaaaaa;
+}
+
+footer .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+footer .col2 p {
+    color: #aaaaaa;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer .col2 h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+footer .col4 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col4 h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer .col4 hr {
+    border: 1px solid var(--primary-color, #F25123);
+    margin-bottom: 15px;
+}
+
+footer .col4 .row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer .col4 .row i {
+    cursor: pointer;
+    color: var(--primary-color, #F25123);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+footer .col4 .row {
+    width: 450px;
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+
+/*end footer section*/
